@@ -1,0 +1,24 @@
+
+<center>
+            <form class="navbar-form " role="search">
+              <div class="form-group has-success">
+                <input type="text" class="form-control"  placeholder="Search Books" ng-model="test">
+              </div>
+            </form>
+          </center>
+            <br>
+
+            <ul class="rig columns-4" ng-controller="mainController">
+
+
+  <li ng-repeat="p in pics | filter: test">
+    <a ui-sref="loggedin.bookdetail">
+<img height:90px ng-src="{{p.img}}" ng-click="goToDetailPage(p.ISBN,p.name,p.author,p.publisher,p.desc,p.tnum,p.img,p.pnumber)" /></a>
+		<h3>{{p.name}}</h3>
+
+
+</li>
+
+
+
+</ul>

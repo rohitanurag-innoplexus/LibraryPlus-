@@ -1,0 +1,35 @@
+
+<br>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-1 col-md-offset-4">
+            <div class="bs-component">
+              <form class="form-horizontal" ng-controller="issueController" ng-submit="issueUser()">
+                <fieldset>
+
+                  <div class="form-group ">
+                    <label for="select" class="control-label">ISBN</label>
+
+                      <input type="text" class="form-control" ng-model="isbn" >
+                  </div>
+                  <div class="form-group ">
+                    <label for="select" class="control-label">Roll Number</label>
+
+                      <input type="text" class="form-control" ng-model="rnum"  >
+                  </div>
+                  <div class="form-group ">
+                    <label for="select" class="control-label">No. of Copies</label>
+
+                      <input type="text" class="form-control" ng-model="ncop"  >
+                  </div>
+
+
+                  <div class="form-group">
+                    <div class="col-lg-12 col-lg-offset-3">
+                      <button type="reset" class="btn btn-primary">Cancel</button>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
